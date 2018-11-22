@@ -1,0 +1,9 @@
+{
+  "db": {
+    "port": 27017,
+    "url": "mongodb+srv://danielaraujorn:mongoDB123@cluster0-bfiow.mongodb.net/test?retryWrites=true",
+    "database": "todoapp",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}

@@ -10,7 +10,6 @@ module.exports = function(Checkbox) {
     returns: { arg: "checkbox", type: "object" }
   });
   Checkbox.check = (id, checked, callback) => {
-    console.log(id, checked);
     Checkbox.findById(id, (err, item) =>
       item.updateAttribute("checked", checked, (err, updated) =>
         callback(null, updated)

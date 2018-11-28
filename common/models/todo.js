@@ -21,6 +21,7 @@ module.exports = function(Todo) {
   Todo.returnMyTodos = ({ accessToken }, callback) =>
     Todo.find(
       {
+        order: "date DESC",
         where: { userId: accessToken.userId },
         include: { relation: "checkboxes" }
       },
